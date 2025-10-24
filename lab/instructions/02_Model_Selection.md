@@ -36,8 +36,8 @@ Since the list is quite consistent, you can use the filtering options to narrow 
 
 After applying filters, you'll see a refined list of models. For this exercise:
 
-1. Locate the **GPT-4.1** and **Mistral Small 3.1** models in the filtered results.
-   - **GPT-4.1** is a full-featured multimodal model with comprehensive capabilities
+1. Locate the **GPT-5-mini** and **Mistral Small 3.1** models in the filtered results.
+   - **GPT-5-mini** is a full-featured multimodal model with comprehensive capabilities
    - **Mistral Small 3.1** is an optimized smaller model with faster response times and lower costs.
 2. Click **Add model** on each model tile to add them to your collection.
 
@@ -52,10 +52,11 @@ After applying filters, you'll see a refined list of models. For this exercise:
 
 ![Try in playground](../../img/try_in_playground.png)
 
-2. You'll be prompted to login to your GitHub account to access the free-tier models. Click **Allow** and complete the authentication process, by using the same GitHub credentials you used in the [previous lab section](./01_Get_Started.md).
+1. You'll be prompted to login to your GitHub account to access the free-tier models. Click **Allow** and complete the authentication process, by using the same GitHub credentials you used in the [previous lab section](./01_Get_Started.md).
 
 > [!TIP]
 > Now that you are logged in, you should be able to see the models you added into your collection in the 'My resources' tab, under 'GitHub'.
+>
 > ![Model collection](../../img/model_collection.png)
 
 3. In the **Model** field, you'll see the name of the model you just selected, for example **Mistral Small 3.1 (via GitHub)**. 
@@ -63,7 +64,7 @@ After applying filters, you'll see a refined list of models. For this exercise:
 ![Model Playground](../../img/model_playground.png)
 
 4. Next, click the **Compare** button to enable side-by-side comparison
-5. From the dropdown, select your second model (GPT-4.1 if Mistral Small 3.1 is already selected)
+5. From the dropdown, select your second model (GPT-5-mini if Mistral Small 3.1 is already selected)
 6. You now have two models ready for comparison testing
 
 ![Model Comparison](../../img/model_comparison.png)
@@ -126,7 +127,7 @@ Review the outputs from both models, using several factors to guide your evaluat
 
 ## Step 6: Import selected model from Azure AI Foundry
 
-Once we are done with the comparison, we are going to select one of the two models for further prototyping in the next lab sections. For the sake of this exercise, let's go with **GPT-4.1**. 
+Once we are done with the comparison, we are going to select one of the two models for further prototyping in the next lab sections. For the sake of this exercise, let's go with **GPT-5-mini**. 
 
 > [!TIP]
 > To come back to the standard Playground (with a single pane and a single model),you can click on **Select this model** on the right side of the model name.
@@ -135,7 +136,7 @@ Once we are done with the comparison, we are going to select one of the two mode
 
 Now, since in the next section we are going to augment the model with additional context data relative to Zava, our DIY retail company, we need to switch to a model hosted in Azure AI Foundry, which provides enterprise-grade security and compliance features.
 
-Go back to **Model Playground** and expand the **Model** dropdown and select the gpt-4.1 instance hosted in Azure AI Foundry, that has been pre-deployed for this workshop, in the project you logged into in the [previous lab section](./01_Get_Started.md).
+Go back to **Model Playground** and expand the **Model** dropdown and select the gpt-5-mini instance hosted in Azure AI Foundry, that has been pre-deployed for this workshop, in the project you logged into in the [previous lab section](./01_Get_Started.md).
 
 ![Select Azure Model](../../img/select_azure_model.png)
 

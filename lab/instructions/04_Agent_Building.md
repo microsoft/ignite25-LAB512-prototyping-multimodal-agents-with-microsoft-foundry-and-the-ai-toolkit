@@ -16,7 +16,7 @@ Agent Builder's UI is organized into two sections. The left side of Agent Builde
 
 ## Step 2: Create the Agent
 
-Let's create Zava's Cora agent! In **Agent Builder** select **+ New Agent**. Within the **Agent name** field, enter **Cora**. For the agent's **Model**, select the **gpt-4.1 (via Azure AI Foundry)** model.
+Let's create Zava's Cora agent! In **Agent Builder** select **+ New Agent**. Within the **Agent name** field, enter **Cora**. For the agent's **Model**, select the **gpt-5-mini (via Azure AI Foundry)** model.
 
 ![Agent Basic Information](../../img/agent-basic-information.png)
 
@@ -131,7 +131,7 @@ Due to the non-deterministic nature of language models, the agent's output will 
 >  
 > This paint will help to bring a soft, sophisticated look to your space while being easy to care for. If you have any other questions or need more details, feel free to ask!
 
-If the Cora agent did not recommend an eggshell paint from the product catalog, there's various techniques that we could leverage to modify the agent's behavior to encourage the use of the **get_products_by_name** tool. One should way would be to modify the **Instructions** to explicitly reference the required tools to use in which the model has access. 
+If the Cora agent did not recommend an eggshell paint from the product catalog, there's various techniques that we could leverage to modify the agent's behavior to encourage the use of the **get_products_by_name** tool. One should way would be to modify the **Instructions** to explicitly reference the required tools to use in which the model has access.
 
 If you'd like to continue testing tool calls with the Cora agent, try submitting the following prompts in the Playground:
 
