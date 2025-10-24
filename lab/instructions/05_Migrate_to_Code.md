@@ -2,7 +2,7 @@
 
 In this section, you will learn how to migrate the agent you've created in AI Toolkit to a code-based workflow.
 
-The AI Toolkit provides generated code for agents created in Agent Builder. You can chose your preferred SDK as well as programming language. Once you have your code file, you can integrate your agent into your own app.
+The AI Toolkit provides generated code for agents created in Agent Builder. You can choose your preferred SDK as well as programming language. Once you have your code file, you can integrate your agent into your own app.
 
 ## Step 1: Generate the Code
 

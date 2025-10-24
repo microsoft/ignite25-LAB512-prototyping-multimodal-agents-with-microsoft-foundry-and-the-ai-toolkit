@@ -74,7 +74,7 @@ Earlier in the **Model Augmentation** exercise, we added grounding data to the m
 
 To address that, we'll leverage the Zava **Basic Customer Sales** MCP server, which has been configured to run locally in this codespace. This server consists of a **get_products_by_name** tool which enables Cora to do product searches by name with fuzzy matching, get store-specific product availability through row level security, and get real-time inventory levels and stock information. The retrieval of relevant information is handled automatically by the MCP server, which communicates with the agent via the MCP standard, so that the agent can focus on generating responses based on the most relevant and current data.
 
-To start the **Basic Customer Sales** server, within your Visual Studio Code workspace, navigate to `.vscode/mcp.json`. Within the `mcp.json` file, locate the `zava-customer-sales-stdio` server and click **Start** above the server.
+To start the **Basic Customer Sales** server, within your Visual Studio Code workspace, go to **Explorer** from the side bar menu, navigate to `.vscode/mcp.json`. Within the `mcp.json` file, locate the `zava-customer-sales-stdio` server and click **Start** above the server.
 
 ![Start Zava MCP Server](../../img/start-zava-mcp-server.png)
 
@@ -99,14 +99,10 @@ When prompted, select **Use Tools Added in Visual Studio Code**. In  the list of
 
 ## Step 3: Chat with the Agent
 
-You're now ready to test whether the Cora agent executes a tool call when given a prompt that warrants leveraging a tool! On the **Playground** tab, click the **Clear all messages** icon to start a new conversation.
-
-![Clear all messages.](../../img/clear-all-messages.png)
-
-With the chat window cleared, attach the `demo-living-room.png` and submit the following prompt:
+You're now ready to test whether the Cora agent executes a tool call when given a prompt that warrants leveraging a tool! On the **Playground** tab, attach the `demo-living-room.png` and submit the following prompt:
 
 ```
-Here’s a photo of my living room. Based on the lighting and layout, recommend either a Zava eggshell or Zava semi-gloss paint.
+Here’s a photo of my living room. Based on the lighting and layout, recommend a Zava eggshell paint.
 ```
 
 If the agent wants to call a tool, a notification will appear in Visual Studio Code requesting to **Run get_products_by_name**. Select **Yes** to execute the tool call.
@@ -117,7 +113,7 @@ Assuming the agent executes a tool call, a section appears in the agent output i
 
 ![Tool call in the agent's output.](../../img/tool-call.png)
 
-Did Cora recommend Zava's eggshell paint? Due to the non-deterministic nature of language models, the agent's output will differ each time the aforementioned prompt is submitted. Provided below is example of the agent's response:
+Due to the non-deterministic nature of language models, the agent's output will differ each time the aforementioned prompt is submitted. Provided below is example of the agent's response:
 
 > For your lovely interior, I recommend our Interior Eggshell Paint from Zava's Paint & Finishes collection.  
 >  
@@ -135,11 +131,7 @@ Did Cora recommend Zava's eggshell paint? Due to the non-deterministic nature of
 >  
 > This paint will help to bring a soft, sophisticated look to your space while being easy to care for. If you have any other questions or need more details, feel free to ask!
 
-If the Cora agent did not recommend an eggshell paint, there's various techniques that we could leverage to modify the agent's behavior to encourage the use of the **get_products_by_name** tool. One should way would be to modify the **Instructions** to explicitly reference the required tools to use in which the model has access. Alternatively, you could modify the prompt itself to the following:
-
-```
-Recommend a Zava eggshell paint.
-```
+If the Cora agent did not recommend an eggshell paint, there's various techniques that we could leverage to modify the agent's behavior to encourage the use of the **get_products_by_name** tool. One should way would be to modify the **Instructions** to explicitly reference the required tools to use in which the model has access.
 
 If you'd like to continue testing tool calls with the Cora agent, try submitting the following prompts in the Playground:
 

@@ -5,9 +5,9 @@
 
 ## Sign in to Windows
 
-As a first step, login into the lab Virtual Machine using the following credentials:
-- Username: already set to Admin.
-- Password: enter +++@lab.VirtualMachine(Win11Base23B-W11-22H2).Password+++ and click.
+As a first step, login into the lab Virtual Machine using the credentials you can find in the **Resources tab** under the Skillable VM name.
+
+![VM login credentials](../../img/vm_login_credentials.png)
 
 > [!TIP]
 >  First time using **Skillable?** The green "T" (e.g., +++Admin+++) indicates values that are automatically input for you at the current cursor location in VM, with one click. This reduces your effort and minimizes input errors.
@@ -17,28 +17,28 @@ As a first step, login into the lab Virtual Machine using the following credenti
 
 In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hosted development environment with all the necessary tools and dependencies pre-installed. This will allow you to focus on learning and prototyping without worrying about local setup.
 
-To launch a codespace you need a **GitHub account**. Follow the instructions below to sign-in with a given GitHub Enterprise (GHE)account and create a GitHub Codespace for this lab.
+To launch a codespace you need a **GitHub account**. Follow the instructions below to sign-in with a given GitHub Enterprise (GHE) account and create a GitHub Codespace for this lab.
 
-1. Open the edge browser from the taskbar. You'll get a browser tab with the [GHE sign-in page](https://github.com/enterprises/skillable-events/sso) already opened for you.
+1. Open the edge browser from the taskbar. You'll get a browser tab with the GHE sign-in page already opened for you.
 
 2. Sign-in with the following credentials:
    -  Username: +++@lab.CloudPortalCredential(User1).Username+++
    -  TAP: +++@lab.CloudPortalCredential(User1).TAP+++
 
-3. Next, open a new browser tab and navigate to the [Repo import url](https://github.com/new/import). Fill in the required fields as follows:
-   - **Source repo**: +++https://github.com/microsoft/ignite25-LAB512-prototyping-multimodal-agents-with-azure-ai-foundry-and-the-ai-toolkit#+++, url of the GitHub repo hosting the lab code and resources.
-   - **Owner**: select `Skillable-Events`
-   - **Repository name**: enter `Lab512-@lab.LabInstance.Id`
-
-    Once import is complete, you will be redirected to the newly created repo page.
+3. Once you are signed in, you'll be redirected to the [GitHub repo](https://github.com/skillable-events/ignite25-LAB512-prototyping-multimodal-agents-with-azure-ai-foundry-and-the-ai-toolkit) hosting the lab code and resources.
 
 4. Next, click on the green **Code** button and select **Create codespace on main** from the dropdown menu.
 
     ![Create Codespace](../../img/create_codespace.png)
 
-5. Once the codespace is created, you'll see a Visual Studio Code environment loading in your browser. You might choose to continue working in the browser or click on the **Open in VS Code** button to open it in the desktop application.
+5. Once the codespace is created, you'll see a Visual Studio Code environment loading in your browser. You might choose to continue working in the browser or click on the **Open in VS Code** button to open it in the desktop application (recommended option).
 
     ![Open in VS Code](../../img/open_in_vscode.png)
+
+> [!NOTE]
+> You'll be prompted with a popup to authorize the VS Code Desktop app accessing public and private networks. Click **Allow** to proceed.
+
+## Login to Azure 
 
 In the GitHub Codespace, you should be able to see two Visual Studio Code extensions already installed: 
 - The **AI Toolkit**: this is the extension we will be using to interact with various AI models and services in this lab.

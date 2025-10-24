@@ -48,20 +48,23 @@ After applying filters, you'll see a refined list of models. For this exercise:
 
 ## Step 3: Open the Playground for Testing
 
-1. Click on **Playground** in the AI Toolkit panel. The Playground allows you to test and compare models interactively.
-2. You'll be prompted to login to your GitHub account to access the free-tier models. Click **Allow** and complete the authentication process, by using the same GitHub credentials you used in the [previous lab section](./01_Get_Started.md).
+1. Click on **Try in Playground** within the model tile. The Playground allows you to test and compare models interactively.
 
->![TIP]
+![Try in playground](../../img/try_in_playground.png)
+
+1. You'll be prompted to login to your GitHub account to access the free-tier models. Click **Allow** and complete the authentication process, by using the same GitHub credentials you used in the [previous lab section](./01_Get_Started.md).
+
+> [!TIP]
 > Now that you are logged in, you should be able to see the models you added into your collection in the 'My resources' tab, under 'GitHub'.
 
-![Model collection](../../img/model_collection.png)
+> ![Model collection](../../img/model_collection.png)
 
-3. In the **Model** field, select one of the two GitHub-hosted models you added to your collection, for example **OpenAI gpt-5-mini (via GitHub)**. It will be loaded into the Playground automatically.
+3.  In the **Model** field, you'll see the name of the model you just selected, for example **Mistral Small 3.1 (via GitHub)**. 
 
 ![Model Playground](../../img/model_playground.png)
 
 4. Next, click the **Compare** button to enable side-by-side comparison
-5. From the dropdown, select your second model (Mistral Small 3.1 if GPT-5-mini is already selected)
+5. From the dropdown, select your second model (GPT-5-mini if Mistral Small 3.1 is already selected)
 6. You now have two models ready for comparison testing
 
 ![Model Comparison](../../img/model_comparison.png)
@@ -101,7 +104,7 @@ Next, test the models' image processing capabilities:
 
 3. Select an image file to upload. You'll be prompted with a text field with a default file path in your workspace directory. Replace it with the following:
    ```
-   /workspace/img/demo_living_room.png
+   /workspace/img/demo-living-room.png
    ```
 ![Image File Path](../../img/image_file_path.png)
 
@@ -129,6 +132,7 @@ Once we are done with the comparison, we are going to select one of the two mode
 
 > [!TIP]
 > To come back to the standard Playground (with a single pane and a single model),you can click on **Select this model** on the right side of the model name.
+>
 > ![Select this model](../../img/select_this_model.png)
 
 Now, since in the next section we are going to augment the model with additional context data relative to Zava, our DIY retail company, we need to switch to a model hosted in Azure AI Foundry, which provides enterprise-grade security and compliance features.
