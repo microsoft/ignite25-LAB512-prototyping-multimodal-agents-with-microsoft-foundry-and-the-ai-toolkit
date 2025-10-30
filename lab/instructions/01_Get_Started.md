@@ -86,7 +86,7 @@ Next, you'll be redirected to a browser window to complete the login process. En
 > [!NOTE]
 > You'll be asked to confirm if you want to allow the automatic sign-in to all desktop apps and websites on the device. Click **Yes, all apps** to proceed. Then click **Done** to complete the login process and return to VS Code.
 
-Back in your Codespace, you'll be asked to select the Azure AI Foundry project to use. Select the only available option, which is the project pre-deployed for this workshop.
+Back in your codespace, you'll be asked to select the Azure AI Foundry project to use. Select the only available option, which is the project pre-deployed for this workshop.
 
 ![Select Project](../../img/select_project.png)
 
