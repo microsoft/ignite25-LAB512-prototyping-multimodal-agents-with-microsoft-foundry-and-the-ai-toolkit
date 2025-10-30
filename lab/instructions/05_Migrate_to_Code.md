@@ -20,15 +20,24 @@ To access GitHub Copilot Chat, select the **Toggle Chat** icon at the top of the
 
 ![Toggle chat button.](../../img/toggle-chat.png)
 
+>[!WARNING]
+> You'll be asked to sign-in again to GitHub, so to have access to GitHub Copilot Chat. Make sure to use the same GitHub credentials you used to create the GitHub Codespace.
+
 Just be sure to have the file active so that GitHub Copilot Chat can use the file as context. Alternatively, you could reference the specific file itself in your prompt to GitHub Copilot Chat.
 
 ![GitHub Copilot Chat in Ask mode.](../../img/ghcp-ask-mode.png)
+
+For example try the following prompt:
+
+```
+Explain what's happening in this script.
+```
 
 If there's any changes that need to be made, you could switch to **Agent** mode and request the changes to be made. You'll be requested to approve any file changes prior to committing the file updates to the script.
 
 ## Step 3: Run the Code
 
-If you'd like to run the code, follow the comments at the top of the code file. The instructions will vary as it's dependent on the client SDK and language selected.
+If you'd like to run the code, save the file and follow the comments at the top of the code file. The instructions will vary as it's dependent on the client SDK and language selected.
 
 ## Bonus
 

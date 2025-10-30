@@ -87,7 +87,7 @@ If you need help with creating data, the **Generate Data** feature can generate 
 
 ![Generate data.](../../img/generate-data.png)
 
-After entering your **Rows of Data to Generate**, modify the **Generation Logic** and select **Generate** to generate a dataset. The generated dataset appears in the evaluation table.
+After entering the number of **Rows of Data to Generate**, modify the **Generation Logic** and select **Generate** to generate a dataset. The generated dataset appears in the evaluation table.
 
 **Import a Dataset**
 

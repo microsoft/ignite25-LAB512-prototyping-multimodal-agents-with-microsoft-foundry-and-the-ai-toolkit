@@ -27,18 +27,39 @@ To launch a codespace you need a **GitHub account**. Follow the instructions bel
 
 3. Once you are signed in, you'll be redirected to the [GitHub repo](https://github.com/skillable-events/ignite25-LAB512-prototyping-multimodal-agents-with-azure-ai-foundry-and-the-ai-toolkit) hosting the lab code and resources.
 
-4. Next, click on the green **Code** button and select **Create codespace on main** from the dropdown menu.
+4. Next, click on the green **Code** button and select **Create codespace on main** from the **Codespaces** tab.
 
     ![Create Codespace](../../img/create_codespace.png)
 
-5. Once the codespace is created, you'll see a Visual Studio Code environment loading in your browser. You might choose to continue working in the browser or click on the **Open in VS Code** button to open it in the desktop application (recommended option).
+> [!WARNING]
+> The codespace creation process might take a few minutes, as all the necessary dependencies and tools are being set up in the cloud environment.
+
+5. Once the codespace is created, you'll see a Visual Studio Code environment loaded in your browser.
+![Codespace layout](../../img/codespace_layout.png)
+
+6. You might choose to continue working in the browser or click on the **Open in VS Code** button to open it in the desktop application (recommended option).
 
     ![Open in VS Code](../../img/open_in_vscode.png)
 
-> [!NOTE]
-> You'll be prompted with a popup to authorize the VS Code Desktop app accessing public and private networks. Click **Allow** to proceed.
+7. If you choose to open it in the desktop application, you'll be prompted to confirm opening the VS Code Desktop app. Click **Open** to proceed.
 
-## Login to Azure 
+> [!NOTE]
+> You'll also get a popup *"All done. You can close this tab now."* in the browser, that you can just ignore.
+
+![Confirm opening VS Code App](../../img/confirm_opening_vscode.png)
+
+8. Once VS Code Desktop is opened, you'll be asked to allow access to the codespace. Click **Open** to proceed.
+
+![Open Codespaces in VS Code Desktop](../../img/open_codespaces_vscode.png)
+
+9. Next, you'll be asked to sign in to GitHub from VS Code. By clicking **Allow**, a browser window will open to complete the sign-in process. Click **Continue** to proceed with the GitHub Enterprise account you used to create the Codespace. And then click on **Authorize Visual Studio Code** to complete the sign-in process. Also, when asked to allow VS Code access to public and private networks, click **Allow**.
+
+10. Once the sign-in process is completed, the site will try to redirect you back to VS Code. Click on the **Open** button to proceed.
+![Redirect back to VS Code](../../img/redirect_back_to_vscode.png)
+
+11. Back in VS Code, you are now set to start working in the codespace environment. You should see a layout pretty similar to what you had in the browser.
+
+## Login to Azure
 
 In the GitHub Codespace, you should be able to see two Visual Studio Code extensions already installed: 
 - The **AI Toolkit**: this is the extension we will be using to interact with various AI models and services in this lab.
@@ -61,6 +82,9 @@ You'll be prompted with a popup to confirm with the Azure login. Click **Allow**
 Next, you'll be redirected to a browser window to complete the login process. Enter the following credentials:
 -  Email: +++@lab.CloudPortalCredential(User1).Username+++
 -  TAP: +++@lab.CloudPortalCredential(User1).TAP+++
+
+> [!NOTE]
+> You'll be asked to confirm if you want to allow the automatic sign-in to all desktop apps and websites on the device. Click **Yes, all apps** to proceed. Then click **Done** to complete the login process and return to VS Code.
 
 Back in your Codespace, you'll be asked to select the Azure AI Foundry project to use. Select the only available option, which is the project pre-deployed for this workshop.
 

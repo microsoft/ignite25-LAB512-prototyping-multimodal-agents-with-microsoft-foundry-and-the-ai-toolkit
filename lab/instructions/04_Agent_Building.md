@@ -93,11 +93,11 @@ Back in Agent Builder, select the **+** icon next to **Tools** to open the wizar
 
 ![Add tool.](../../img/add-tool.png)
 
-When prompted, select **Use Tools Added in Visual Studio Code**. In  the list of tools available, only select the **mcp_zava_customer_get_products_by_name** tool and click **OK**. You can unselect all tools by unchecking the box at the top of the wizard next to the search bar.
+Then select the **MCP Server** option. When prompted, select **Use Tools Added in Visual Studio Code**. In  the list of tools available, only select the **mcp_zava_customer_get_products_by_name** tool and click **OK**. You can unselect all tools by unchecking the box at the top of the wizard next to the search bar.
 
 ![Deselect all tools.](../../img/deselect-all-tools.png)
 
-## Step 3: Chat with the Agent
+## Step 6: Chat with the Agent
 
 You're now ready to test whether the Cora agent executes a tool call when given a prompt that warrants leveraging a tool! On the **Playground** tab, attach the `demo-living-room.png` and submit the following prompt:
 

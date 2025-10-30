@@ -4,7 +4,7 @@ In this section, you will explore the AI Toolkit Model Catalog to discover, filt
 
 ## Step 1: Apply Filters to Narrow Your Selection
 
-1. In your Codespace, locate the **AI Toolkit** extension icon in the left sidebar
+1. In your codespace, locate the **AI Toolkit** extension icon in the left sidebar
 2. Click on the AI Toolkit icon to open the extension panel
 3. Click on **Model Catalog** to browse available models
 
@@ -14,37 +14,48 @@ On the top of the page you'll find the most popular models; scroll down to see t
 
 Since the list is quite consistent, you can use the filtering options to narrow down the selection based on your requirements.
 
+> [!TIP]
+> Before proceeding, close the GitHub Copilot Chat panel that has been loaded on the right side of your codespace, by clicking on the 'X' icon in the top right corner of the panel. Also, click on the 'AI Toolkit' app icon to temporarily hide it, so you have more space to work with the Model Catalog.
+
 ### Filter by Hosting Provider
 
 1. Click on the **Hosted by** filter dropdown. You have several options, such as GitHub, Azure AI Foundry, OpenAI and you can even leverage models hosted on your local infrastructure, through Ollama or ONNX.
+
+> [!NOTE]
+> If you cannot see the **Hosted by** filter, make sure you expanded the Model Catalog panel to full screen, by following the instructions in the **Tip** section above. Otherwise, you can find all filters regrouped under the **All filters** dropdown.
+
 2. Select **GitHub** to view free-to-use models that are excellent for prototyping.
 
 > [!NOTE]
 > GitHub models are perfect for getting started because they're free to use, but they are token-rate limited. You can experiment without cost concerns, but for production deployments consider using a pay-as-you-go offering through your GitHub Account or Azure AI Foundry.
-
-### Filter by Model Features
-
-1. Click on the **Features** filter dropdown to filter by model capabilities, such as image/audio or video processing, tool calling, etc.
-2. Select **Image Attachment** to find multimodal models that support visual input processing and enables multimodal interactions combining text and images.
 
 ### Filter by Publisher
 
 1. Click on the **Publisher** filter dropdown to filter by the model publisher, such as Microsoft, Meta, Cohere, etc. Note that you can find both open-source and proprietary models.
 2. Select **OpenAI** and **Mistral AI** to view models from these two leading providers.
 
+### Filter by Model Features
+
+1. Click on the **Features** filter dropdown to filter by model capabilities, such as image/audio or video processing, tool calling, etc.
+2. Select **Image Attachment** to find multimodal models that support visual input processing and enables multimodal interactions combining text and images.
+
 ## Step 2: Add Models to Your Collection
 
-After applying filters, you'll see a refined list of models. For this exercise:
+After applying filters, you'll see a refined list of models. Click on **View All** to see the complete list of filtered models.
 
-1. Locate the **GPT-5-mini** and **Mistral Small 3.1** models in the filtered results.
-   - **GPT-5-mini** is a full-featured multimodal model with comprehensive capabilities
+![View All](../../img/view_all.png)
+
+For this exercise:
+
+1. Locate the **OpenAI GPT-5-mini** and **Mistral Small 3.1** models in the filtered results.
+   - **OpenAI GPT-5-mini** is a full-featured multimodal model with comprehensive capabilities
    - **Mistral Small 3.1** is an optimized smaller model with faster response times and lower costs.
 2. Click **Add model** on each model tile to add them to your collection.
 
 ![Add Model](../../img/add_model.png)
 
 > [!NOTE]
-> Once they are added, the blue button will change to green with the label **Added**. 
+> Once they are added, the blue button will change to green with the label **Added**.
 
 ## Step 3: Open the Playground for Testing
 
@@ -52,7 +63,7 @@ After applying filters, you'll see a refined list of models. For this exercise:
 
 ![Try in playground](../../img/try_in_playground.png)
 
-1. You'll be prompted to login to your GitHub account to access the free-tier models. Click **Allow** and complete the authentication process, by using the same GitHub credentials you used in the [previous lab section](./01_Get_Started.md).
+2. You'll be prompted to login to your GitHub account to access the free-tier models. Click **Allow** and complete the authentication process, by using the same GitHub credentials you used in the [previous lab section](./01_Get_Started.md).
 
 > [!TIP]
 > Now that you are logged in, you should be able to see the models you added into your collection in the 'My resources' tab, under 'GitHub'.
@@ -121,7 +132,7 @@ Review the outputs from both models, using several factors to guide your evaluat
 - **Token Usage**: Inspect the token usage for each model to understand cost implications. Note that token usage may vary not only based on the verbosity of the response but also on the tokenizer efficiency of each model.
 
 > [!TIP]
-> Number of output tokens is visible in the response footer, along with characters length.
+> Number of output tokens is visible in the response footer, along with characters length. LLMs are non-deterministic, so you might see slight variations in token usage across multiple runs with the same input prompt.
 
 ![Token usage](../../img/token_usage.png)
 
