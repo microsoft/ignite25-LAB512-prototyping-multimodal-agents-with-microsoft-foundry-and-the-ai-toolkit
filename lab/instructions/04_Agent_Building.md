@@ -99,7 +99,13 @@ Then select the **MCP Server** option. When prompted, select **Use Tools Added i
 
 ## Step 6: Chat with the Agent
 
-You're now ready to test whether the Cora agent executes a tool call when given a prompt that warrants leveraging a tool! On the **Playground** tab, attach the 'demo-living-room.png' and submit the following prompt:
+You're now ready to test whether the Cora agent executes a tool call when given a prompt that warrants leveraging a tool! On the **Playground** tab, attach the 'demo-living-room.png' image, available at the following path:
+
+```
+/workspace/img/demo-living-room.png
+```
+
+Then submit the following textual prompt:
 
 ```
 Here’s a photo of my living room. Based on the lighting and layout, recommend a Zava eggshell paint.
@@ -135,8 +141,13 @@ If the Cora agent did not recommend an eggshell paint from the product catalog, 
 
 If you'd like to continue testing tool calls with the Cora agent, try submitting the following prompts in the Playground:
 
-- How much is Zava's eggshell paint?
-- What are the current inventory levels for Zava's eggshell paint?
+```
+How much is Zava's eggshell paint?
+```
+
+```
+What are the current inventory levels for Zava's eggshell paint?
+```
 
 ## Key Takeaways
 

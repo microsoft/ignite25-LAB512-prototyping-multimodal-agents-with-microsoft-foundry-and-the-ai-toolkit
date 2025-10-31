@@ -108,7 +108,7 @@ Consider experimenting with each option! The remaining instructions for this lab
 
 ## Step 3: Assess Your Agent Output
 
-With your dataset prepared, you can run rows one by one or select multiple rows to run together. To select a row, check the box to the left of the row. To run the row, select the **Run Response** icon (i.e. play button).
+With your dataset prepared, you can run rows one by one or select multiple rows to run together. To select all rows, check the box in the header row. To run the selected rows, select the **Run Response** icon (i.e. play button).
 
 ![Run button.](../../img/run-eval.png)
 

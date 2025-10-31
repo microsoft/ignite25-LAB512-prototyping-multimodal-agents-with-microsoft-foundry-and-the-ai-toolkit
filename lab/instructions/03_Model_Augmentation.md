@@ -40,7 +40,12 @@ Note that this message includes:
 
 ## Step 2: Testing the System Message with Multimodal Input
 
-Now that we configured the system prompt, let's test the system with a multimodal user prompt. Attach again the same image - 'demo-living-room' - of the living room we used in the [previous section](./02_Model_Selection.md), hosted in the 'img' folder. Combine it with the following user prompt:
+Now that we configured the system prompt, let's test the system with a multimodal user prompt. Attach again the same image - 'demo-living-room' - of the living room we used in the previous section, available at the following path:
+
+```
+/workspace/img/demo-living-room.png
+```
+Combine it with the following user prompt:
 
 ```
 Here’s a photo of my living room. I’m not sure whether I should go with eggshell or semi-gloss. Can you tell which would work better based on the lighting and layout?

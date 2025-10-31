@@ -14,15 +14,17 @@ On the top of the page you'll find the most popular models; scroll down to see t
 
 Since the list is quite consistent, you can use the filtering options to narrow down the selection based on your requirements.
 
-> [!TIP]
-> Before proceeding, close the GitHub Copilot Chat panel that has been loaded on the right side of your codespace, by clicking on the 'X' icon in the top right corner of the panel. Also, click on the 'AI Toolkit' app icon to temporarily hide it, so you have more space to work with the Model Catalog.
+Before proceeding, close the GitHub Copilot Chat panel that has been loaded on the right side of your codespace, by clicking on the 'X' icon in the top right corner of the panel. Also, click on the 'AI Toolkit' app icon to temporarily hide it, so you have more space to work with the Model Catalog.
+
+![Expand Model Catalog view](../../img/expand_model_catalog_view.png)
+
+By doing so, you'll see the filtering options - previously regrouped under **All filters** - displayed individually at the top of the Model Catalog panel.
+
+![Filter Options](../../img/filter_options.png)
 
 ### Filter by Hosting Provider
 
 1. Click on the **Hosted by** filter dropdown. You have several options, such as GitHub, Azure AI Foundry, OpenAI and you can even leverage models hosted on your local infrastructure, through Ollama or ONNX.
-
-> [!NOTE]
-> If you cannot see the **Hosted by** filter, make sure you expanded the Model Catalog panel to full screen, by following the instructions in the **Tip** section above. Otherwise, you can find all filters regrouped under the **All filters** dropdown.
 
 2. Select **GitHub** to view free-to-use models that are excellent for prototyping.
 
@@ -41,15 +43,19 @@ Since the list is quite consistent, you can use the filtering options to narrow 
 
 ## Step 2: Add Models to Your Collection
 
-After applying filters, you'll see a refined list of models. Click on **View All** to see the complete list of filtered models.
-
-![View All](../../img/view_all.png)
+After applying filters, you'll see a refined list of models. 
 
 For this exercise:
 
 1. Locate the **OpenAI GPT-5-mini** and **Mistral Small 3.1** models in the filtered results.
    - **OpenAI GPT-5-mini** is a full-featured multimodal model with comprehensive capabilities
    - **Mistral Small 3.1** is an optimized smaller model with faster response times and lower costs.
+   
+> [!TIP]
+> If you cannot see one of the two models, click on **View All** to see the complete list of filtered models.
+>
+> ![View All](../../img/view_all.png)
+
 2. Click **Add model** on each model tile to add them to your collection.
 
 ![Add Model](../../img/add_model.png)
@@ -69,10 +75,15 @@ For this exercise:
 > Now that you are logged in, you should be able to see the models you added into your collection in the 'My resources' tab, under 'GitHub'.
 >
 > ![Model collection](../../img/model_collection.png)
+>
+> If you don't see them, it's likely because the view hasn't refreshed yet. Proceed to the next step, and the models should appear in the Playground.
 
 3. In the **Model** field, you'll see the name of the model you just selected, for example **Mistral Small 3.1 (via GitHub)**. 
 
 ![Model Playground](../../img/model_playground.png)
+
+> [!WARNING]
+> You might experience some delay in model loading, especially if it's your first time accessing the Playground. Please be patient while the model initializes.
 
 4. Next, click the **Compare** button to enable side-by-side comparison
 5. From the dropdown, select your second model (GPT-5-mini if Mistral Small 3.1 is already selected)
@@ -90,15 +101,17 @@ Let's start interacting with the models with a simple prompt:
 1. Enter this prompt in the text field (where you see the placeholder "Type a prompt"):
    ```
    What materials are commonly used for building a wooden deck?
-   ````
+   ```
 2. Click the paper airplane icon to execute the prompt on both models simultaneously
 
 ![Test the model](../../img/test_the_model.png)
 
+> [!WARNING]
+> Since you are testing a free-tier GitHub-hosted model experience, you might encounter some latency in model response times, especially for more complex prompts.
+
 Now let's test their reasoning capabilities, with the following prompt:
 ```
-I am planning to install outdoor deck lighting for my new 12x16 foot deck. I want to place lights every 4 feet along the perimeter for even illumination. However, I discover that one corner of my deck will be shaded by a large tree, making that area naturally darker.
-Given these constraints, how should I adjust my lighting layout to ensure uniform brightness across the entire deck? Consider the principles of light distribution and explain your reasoning step by step.
+I am planning to install outdoor deck lighting for my new 12x16 foot deck. I want to place lights every 4 feet along the perimeter for even illumination. However, I discover that one corner of my deck will be shaded by a large tree, making that area naturally darker. Given these constraints, how should I adjust my lighting layout to ensure uniform brightness across the entire deck? Consider the principles of light distribution and explain your reasoning step by step.
 ```
 
 Next, test the models' image processing capabilities:
