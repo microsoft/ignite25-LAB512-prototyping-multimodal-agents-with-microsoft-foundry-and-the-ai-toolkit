@@ -24,7 +24,10 @@ Then click on **Finish Setup** -> **Set up Copilot** at the bottom right corner 
 
 ![Set up Copilot](../../img/set_up_copilot.png)
 
-Just be sure to have the file active so that GitHub Copilot Chat can use the file as context. Alternatively, you could reference the specific file itself in your prompt to GitHub Copilot Chat.
+> [!NOTE]
+> If asked to log in, select **Sign-in** -> **Continue with GitHub**. Then click on **Continue** to proceed with the GitHub Enterprise account you used to access the GitHub hosted models, when redirected to the GitHub sign-in page.
+
+Save the generated code file to your workspace as 'src/python/cora-app.py'. Be sure to have the file active so that GitHub Copilot Chat can use the file as context. Alternatively, you could reference the specific file itself in your prompt to GitHub Copilot Chat.
 
 ![GitHub Copilot Chat in Ask mode.](../../img/ghcp-ask-mode.png)
 
@@ -42,8 +45,7 @@ If you'd like to run the code, save the file and follow the comments at the top 
 
 For example, if you selected the **Microsoft Agent Framework** SDK with **Python**, follow the instructions below:
 
-1. Save the generated code file to your workspace as 'src/python/cora_agent.py'.
-2. Replace lines from 31 to 36 with the following code snippet to configure the MCP server tool correctly:
+1. Replace lines from 31 to 36 with the following code snippet to configure the MCP server tool correctly:
 
    ```
     command="python",
@@ -53,26 +55,26 @@ For example, if you selected the **Microsoft Agent Framework** SDK with **Python
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
             ]
    ```
-3. Open a terminal in Visual Studio Code by selecting **Terminal** -> **New Terminal** from the top menu.
-4. Install the required dependencies by using:
+2. Open a terminal in Visual Studio Code by selecting **Terminal** -> **New Terminal** from the top menu.
+3. Install the required dependencies by using:
 
    ```
    pip install agent-framework --pre
    ```
-5. Authenticate to Azure:
+4. Authenticate to Azure:
     ```
     az login
     ```
     you'll be prompted to open a browser window and fill in a code to complete the authentication.
-6. Navigate to the directory where the code file is saved:
+5. Navigate to the directory where the code file is saved:
 
    ```
    cd src/python
    ```
-7. Run the script using:
+6. Run the script using:
 
    ```
-   python cora_agent.py
+   python cora-app.py
    ```
 
 Consider using GitHub Copilot Chat in Agent mode to assist with creating files for the Cora agent's UI. You could also ask GitHub Copilot Chat in Agent mode to integrate the agent script into the app UI so that you'll have a working prototype of the agent!
