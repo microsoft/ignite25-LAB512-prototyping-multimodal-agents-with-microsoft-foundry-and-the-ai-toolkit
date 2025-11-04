@@ -31,6 +31,11 @@ Save the generated code file to your workspace as 'src/python/cora-app.py'. Be s
 
 ![GitHub Copilot Chat in Ask mode.](../../img/ghcp-ask-mode.png)
 
+> [!NOTE]
+> If you see a '+' icon besides the file name, that means cora-app.py is suggested as context by GitHub Copilot Chat, but it's not yet added. Click on the '+' icon to add the file as context.
+>
+> ![Suggested file as context](../../img/suggested_file_context.png)
+
 For example try the following prompt:
 
 ```
@@ -62,10 +67,12 @@ For example, if you selected the **Microsoft Agent Framework** SDK with **Python
    pip install agent-framework --pre
    ```
 4. Authenticate to Azure:
+
     ```
     az login
     ```
-    you'll be prompted to open a browser window and fill in a code to complete the authentication.
+    you'll be prompted to open a browser window and fill in a code to complete the authentication. Once back in the terminal, press **Enter** to confirm the Azure subscription selection.
+
 5. Navigate to the directory where the code file is saved:
 
    ```
