@@ -36,9 +36,9 @@ By doing so, you'll see the filtering options - previously regrouped under **All
 1. Click on the **Publisher** filter dropdown to filter by the model publisher, such as Microsoft, Meta, Cohere, etc. Note that you can find both open-source and proprietary models.
 2. Select **OpenAI** and **Mistral AI** to view models from these two leading providers.
 
-### Filter by Model Features
+### Filter by Model Feature
 
-1. Click on the **Features** filter dropdown to filter by model capabilities, such as image/audio or video processing, tool calling, etc.
+1. Click on the **Feature** filter dropdown to filter by model capabilities, such as image/audio or video processing, tool calling, etc.
 2. Select **Image Attachment** to find multimodal models that support visual input processing and enables multimodal interactions combining text and images.
 
 ## Step 2: Add Models to Your Collection
@@ -72,7 +72,7 @@ For this exercise:
 2. You'll be prompted to login to your GitHub account to access the free-tier models. Click **Allow** and complete the authentication process, by using the same GitHub credentials you used in the [previous lab section](./01_Get_Started.md).
 
 > [!TIP]
-> Now that you are logged in, you should be able to see the models you added into your collection in the 'My resources' tab, under 'GitHub'.
+> Now that you are logged in, you should be able to see the models you added into your collection in the 'My resources' tab, under 'GitHub', in the AI Toolkit extension panel.
 >
 > ![Model collection](../../img/model_collection.png)
 >
@@ -86,7 +86,7 @@ For this exercise:
 > You might experience some delay in model loading, especially if it's your first time accessing the Playground. Please be patient while the model initializes.
 
 4. Next, click the **Compare** button to enable side-by-side comparison
-5. From the dropdown, select your second model (GPT-5-mini if Mistral Small 3.1 is already selected)
+5. From the dropdown, select your second model (OpenAI GPT-5-mini if Mistral Small 3.1 is already selected)
 6. You now have two models ready for comparison testing
 
 ![Model Comparison](../../img/model_comparison.png)
@@ -126,9 +126,9 @@ Next, test the models' image processing capabilities:
 ![Image Attachment](../../img/image_attachment.png)
 
 3. Select an image file to upload. You'll be prompted with a text field with a default file path in your workspace directory. Replace it with the following:
-   ```
-   /workspace/img/demo-living-room.png
-   ```
+```
+/workspace/img/demo-living-room.png
+```
 ![Image File Path](../../img/image_file_path.png)
 
 4. Send the multimodal prompt on both models simultaneously.

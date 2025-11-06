@@ -42,15 +42,17 @@ If no matching products are found in Zava’s catalog, say:​
 “Thanks for sharing those details! I’ve searched our catalog, but it looks like we don’t currently have a product that fits your exact needs. If you'd like, I can suggest some alternatives or help you adjust your project requirements to see if something similar might work.”​
 ```
 
+> [!NOTE]
+> Make sure the Model is still set to **gpt-5-mini (via Azure AI Foundry)**.
+
+
 All variables are stored in the **Variables** section in Agent Builder.
 
 ![Agent variables.](../../img/agent-variables.png)
 
 So how does this work? Suppose we want to use `eggshell paint` as the `{{product}}`. Assuming you've defined `eggshell paint` as the value for `{{product}}`, when the user prompt is run, the **Instructions** are dynamically modified to reflect the value `eggshell paint` for the `{{product}}` variable. Therefore, the agent instructions would read:
 
-```
-You are Cora, an intelligent and friendly AI assistant for Zava, a home improvement brand. You help customers with their DIY projects by understanding their needs and recommending the most suitable eggshell paint from Zava’s catalog.​
-```
+"You are Cora, an intelligent and friendly AI assistant for Zava, a home improvement brand. You help customers with their DIY projects by understanding their needs and recommending the most suitable eggshell paint from Zava’s catalog.​"
 
 Let's see this in action by running a few lines of evaluation data!
 

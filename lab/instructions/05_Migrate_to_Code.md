@@ -50,7 +50,7 @@ If you'd like to run the code, save the file and follow the comments at the top 
 
 For example, if you selected the **Microsoft Agent Framework** SDK with **Python**, follow the instructions below:
 
-1. Locate the section in the code file that configures the MCP server tool (lines 31-34). It should look similar to this:
+1. Locate the section in the code file that configures the MCP server tool. It should look similar to this:
 
    ```python
     command="INSERT_COMMAND_HERE",
@@ -71,26 +71,26 @@ For example, if you selected the **Microsoft Agent Framework** SDK with **Python
 4. Open a terminal in Visual Studio Code by selecting **Terminal** -> **New Terminal** from the top menu.
 5. Install the required dependencies by using:
 
-   ```
-   pip install agent-framework --pre
-   ```
+```
+pip install agent-framework --pre
+```
 6. Authenticate to Azure:
 
-    ```
-    az login
-    ```
+```
+az login
+```
     you'll be prompted to open a browser window and fill in a code to complete the authentication. Once back in the terminal, press **Enter** to confirm the Azure subscription selection.
 
 7. Navigate to the directory where the code file is saved:
 
-   ```
-   cd src/python
-   ```
+```
+cd src/python
+```
 8. Run the script using:
 
-   ```
-   python cora-app.py
-   ```
+```
+python cora-app.py
+```
 
 Consider using GitHub Copilot Chat in Agent mode to assist with creating files for the Cora agent's UI. You could also ask GitHub Copilot Chat in Agent mode to integrate the agent script into the app UI so that you'll have a working prototype of the agent!
 
