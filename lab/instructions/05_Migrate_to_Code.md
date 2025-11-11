@@ -79,7 +79,8 @@ pip install agent-framework --pre
 ```
 az login
 ```
-    you'll be prompted to open a browser window and fill in a code to complete the authentication. Once back in the terminal, press **Enter** to confirm the Azure subscription selection.
+
+You'll be prompted to open a browser window and fill in a code to complete the authentication. Once back in the terminal, press **Enter** to confirm the Azure subscription selection.
 
 7. Navigate to the directory where the code file is saved:
 
