@@ -1,0 +1,30 @@
+# CODEOWNERS file for ignite25-LAB512 repository
+# 
+# This file defines individuals or teams that are responsible for code in this repository.
+# When branch protection is enabled with "Require review from Code Owners", these users
+# will be automatically requested as reviewers when a pull request modifies files they own.
+#
+# For more information, see:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+# Unless a later match takes precedence, these users will be requested for review
+* @carlotta94c @aprilgittens
+
+# GitHub workflows and configuration
+/.github/ @carlotta94c @aprilgittens
+
+# Documentation
+*.md @carlotta94c @aprilgittens
+/lab/ @carlotta94c @aprilgittens
+
+# Source code
+/src/ @carlotta94c @aprilgittens
+
+# Scripts
+/scripts/ @carlotta94c @aprilgittens
+
+# Security and legal files
+/SECURITY.md @carlotta94c @aprilgittens
+/LICENSE @carlotta94c @aprilgittens
+/CODE_OF_CONDUCT.md @carlotta94c @aprilgittens
