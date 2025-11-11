@@ -40,3 +40,82 @@ This repository is one of several for Microsoft Ignite 2025 sessions and should:
 - Security files (`SECURITY.md`)
 - GitHub workflow files in `.github/` directory
 
+## 🔀 Branch Protection and Pull Request Workflow
+
+This repository uses branch protection on the `main` branch to ensure code quality and maintain a clear review process.
+
+### Working with Protected Branches
+
+**NEVER push directly to the `main` branch.** All changes must go through pull requests.
+
+### Creating Feature Branches
+
+When making changes, always create a feature branch using this naming convention:
+
+```bash
+# For new features
+git checkout -b copilot/feature-description
+
+# For bug fixes
+git checkout -b copilot/fix-description
+
+# For updates or improvements
+git checkout -b copilot/update-description
+```
+
+### Pull Request Workflow
+
+1. **Create your feature branch**:
+   ```bash
+   git checkout -b copilot/your-feature-name
+   ```
+
+2. **Make your changes and commit**:
+   ```bash
+   git add .
+   git commit -m "Clear description of changes"
+   ```
+
+3. **Push your branch**:
+   ```bash
+   git push origin copilot/your-feature-name
+   ```
+
+4. **Create a Pull Request** with:
+   - A clear, descriptive title
+   - Detailed description of what was changed and why
+   - References to related issues (e.g., "Fixes #123")
+   - Any relevant screenshots or test results
+
+5. **Wait for review**:
+   - Code owners will be automatically requested as reviewers
+   - Address any feedback or requested changes
+   - Ensure all status checks pass
+
+6. **Keep your branch up-to-date**:
+   ```bash
+   git fetch origin
+   git rebase origin/main
+   git push --force-with-lease origin copilot/your-feature-name
+   ```
+
+### Pull Request Requirements
+
+When branch protection is enabled, pull requests must meet these requirements:
+
+- ✅ At least 1 approval from a code owner
+- ✅ All conversations must be resolved
+- ✅ All required status checks must pass
+- ✅ Branch must be up-to-date with `main`
+
+### Code Review Guidelines
+
+- Respond to review comments promptly
+- Make requested changes in new commits (don't force-push during active review)
+- Mark conversations as resolved when addressed
+- Request re-review after making significant changes
+
+### Additional Resources
+
+For detailed branch protection configuration instructions, see [`.github/BRANCH_PROTECTION.md`](.github/BRANCH_PROTECTION.md)
+
