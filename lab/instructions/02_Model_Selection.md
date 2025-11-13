@@ -100,9 +100,9 @@ For this exercise:
 Let's start interacting with the models with a simple prompt:
 
 1. Enter this prompt in the text field (where you see the placeholder "Type a prompt"):
-   ```
-   What materials are commonly used for building a wooden deck?
-   ```
+```
+What materials are commonly used for building a wooden deck?
+```
 2. Click the paper airplane icon to execute the prompt on both models simultaneously
 
 ![Test the model](../../img/test_the_model.png)
@@ -118,9 +118,9 @@ I am planning to install outdoor deck lighting for my new 12x16 foot deck. I wan
 Next, test the models' image processing capabilities:
 
 1. Enter this prompt in the text field:
-   ```
-   Describe what's in the image, including colors of the objects.
-   ```
+```
+Describe what's in the image, including colors of the objects.
+```
 
 2. Click the image attachment icon to add a picture as input
 

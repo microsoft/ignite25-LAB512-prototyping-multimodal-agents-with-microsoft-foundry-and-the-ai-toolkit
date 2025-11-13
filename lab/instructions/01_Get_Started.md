@@ -68,8 +68,14 @@ If they are correctly installed, you should see their icons in the left sidebar 
 
 ![Installed extensions](../../img/installed_extensions.png)
 
->[!TIP]
+> [!TIP]
 > If you don't see the icons, click on the ellipsis (...) at the bottom of the sidebar to see the full list of installed extensions. If you still don't see them, and you are still in the browser-based experience, try refreshing the page or re-opening the codespace in VS Code Desktop app.
+
+> [!WARNING]
+> The VS code extensions have been pinned to specific versions within the GitHub Codespaces environment to ensure consistency with the lab manual instructions and avoid unexpected issues. Please refrain from updating these extensions during the lab.
+
+> [!WARNING]
+> The VS code extensions have been pinned to specific versions within the GitHub Codespaces environment to ensure consistency with the lab manual instructions and avoid unexpected issues. Please refrain from updating these extensions during the lab.
 
 Now click on the Foundry extension icon, and then click on **Set Default Project** -> **Sign in to Azure**.
 
