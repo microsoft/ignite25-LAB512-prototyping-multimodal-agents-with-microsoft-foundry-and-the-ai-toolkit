@@ -19,9 +19,10 @@ By the end of this session, learners will be able to:
 
 ### 💻 Technologies Used
 
-1. AI toolkit in Visual Studio Code
-1. GitHub-hosted and Azure AI Foundry-hosted models
-1. MCP servers
+1. [AI toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview)
+1. [GitHub models](https://github.com/features/models)
+1. [Azure AI Foundry Models](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/foundry-models-overview)
+1. [MCP - Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro)
 
 ### 🌟 Microsoft Learn MCP Server
 
