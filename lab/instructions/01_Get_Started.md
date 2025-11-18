@@ -63,7 +63,7 @@ To launch a codespace you need a **GitHub account**. Follow the instructions bel
 
 In the GitHub Codespace, you should be able to see two Visual Studio Code extensions already installed: 
 - The **AI Toolkit**: this is the extension we will be using to interact with various AI models and services in this lab.
-- The **Azure AI Foundry** extension: it's installed as a bundle of the AI Toolkit and provides access to Microsoft Foundry hosted models. 
+- The **Microsoft Foundry** extension: it's installed as a bundle of the AI Toolkit and provides access to Microsoft Foundry hosted models. 
 If they are correctly installed, you should see their icons in the left sidebar of VS Code, as per screenshot below.
 
 ![Installed extensions](../../img/installed_extensions.png)
@@ -77,7 +77,7 @@ If they are correctly installed, you should see their icons in the left sidebar 
 > [!WARNING]
 > The VS code extensions have been pinned to specific versions within the GitHub Codespaces environment to ensure consistency with the lab manual instructions and avoid unexpected issues. Please refrain from updating these extensions during the lab.
 
-Now click on the Azure AI Foundry extension icon, and then click on **Set Default Project** -> **Sign in to Azure**.
+Now click on the Microsoft Foundry extension icon, and then click on **Set Default Project** -> **Sign in to Azure**.
 
 ![Set Default Project](../../img/set_default_project.png)
 
